@@ -1,0 +1,33 @@
+import {useState}from  'react'
+import tailwindcss from 'tailwindcss/vite-plugin-tailwindcss'
+const Dynamic List=()=>{
+    const[list,setIList]=useState([""])
+    const[inputValue,setInputValue]=useState("")
+    const handleAddItem =()=>{
+        if(inputValue.trim)()!==""){list.push(inputValue)}
+        setIList([...list,inputValue]);
+        setInputValue("");
+
+    }
+
+
+};
+const handle button onClick=(e)=>{
+    if(e.key==="Enter "){
+        handlAddItem ();
+    }
+})
+return(
+    <div className="list">
+    <h1>Dynamic List Manager </h1>
+    <div className= "input-container "background -color:lightblue"</div>
+        <input
+        type="text" background -color:lightblue;font-weight:bold;text-align:center;</div>
+        value=inputValue
+        onChange={(e)=>setInputValue(e.target.value)}
+        onKeyDown={handlebutton onClick}
+        placeholder ="Enter item" /div>
+        <button onclick={handleAddItem }>AddItem </button>
+        <ul className="Listitem"{list.map(list,index)=> <li.key={item}</ul>}
+        export default Dynamic List;
+li
